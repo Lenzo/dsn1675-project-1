@@ -198,6 +198,18 @@ h3{
 	padding: .65rem;
 }
 
+@media only screen and (min-width: 48em){
+
+	.about-div{
+		width: 50%;
+		float: left;
+	}
+
+
+}
+
+
+
 /* SKILLS section */
 
 
@@ -207,9 +219,7 @@ h3{
 	padding-top: .65rem;
 }
 
-li + h3{
-	list-style-type: none;
-}
+
 
 #skills h3{
 	margin-bottom: 0;
@@ -227,7 +237,6 @@ li + h3{
 	font-size: 1.5rem;
 	background-color: #666;
 	color: #fff;
-	list-style-type: square;
 	text-align: center;
 	padding-bottom: 1.3rem;
 	max-width: 24rem;
@@ -240,6 +249,7 @@ li + h3{
 	text-align: left;
 	width: 15rem;
 	margin: .65rem auto;
+	list-style-type: square;
 }
 
 
@@ -249,10 +259,9 @@ li + h3{
 		#skills ol{
 			overflow: hidden;
 			display: block;
-			width: 80%;
+			width: 70%;
+			max-width: 45rem;
 			margin: 0 auto;
-			padding: 0 0 .65rem 0;
-
 		}
 
 
@@ -261,13 +270,14 @@ li + h3{
 			width: calc(50% - 1.3rem);
 			margin: .65rem;
 			list-style-type: none;
-
+			min-height: 17.5rem;
 		}
 
 		#skills ul li{
 			width: 100%;
 			float: none;
 			margin: 0;
+			padding-right: 1rem;
 		}
 
 }
@@ -275,8 +285,9 @@ li + h3{
 @media only screen and (min-width: 90em){
 
 
-		#skills ol li{
-			width: calc(25% - 1.3rem);
+		#skills ol>li{
+			width: 23%;
+			padding: 0 1.5rem 1.5rem 1.5rem;
 		}
 }
 
