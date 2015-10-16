@@ -337,7 +337,11 @@ h3{
 	}
 
 	#about ol{
-		margin-left: 8.5rem;
+		margin-left: 4.5rem;
+	}
+
+	.wrapper{
+		width: 66%;
 	}
 
 }
@@ -558,6 +562,8 @@ footer img{
 		margin: 0 auto;
 		vertical-align: middle;
 		border: 1px solid #000;
+		background-image: url("../images/card.svg");
+		background-repeat: no-repeat;
 	}
 
 	section{
@@ -571,5 +577,6 @@ footer img{
 	header{
 		display: none;
 	}
+
 
 }
