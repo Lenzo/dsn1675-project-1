@@ -126,7 +126,7 @@ header nav li a:hover{
 
 	header nav ol{
 		position: absolute;
-		top: 24%;
+		top: 21%;
 		left: 51.5%;
 		right: calc(50% - 7.5rem);
 		text-align: center;
@@ -178,7 +178,8 @@ h3{
 		font-size: 2.5rem;
 		padding: 1.4rem;
 		text-align: left;
-		width: calc(50% - 1.4rem);
+		width: calc(50% - 0.5rem);
+		margin: 2.6rem 0 2.6rem 0;
 	}
 
 	h3{
@@ -187,13 +188,7 @@ h3{
 
 }
 
-@media only screen and (min-width: 90em){
 
-	h2{
-		width: calc(50% - .5rem);
-	}
-
-}
 
 /* INTRO article*/
 
@@ -207,7 +202,7 @@ h3{
 	display: block;
 	width: 100%;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 0;
 	padding-top: 5rem;
 }
 
@@ -219,45 +214,73 @@ h3{
 
 @media only screen and (min-width: 48em){
 
-#intro{
-	overflow: hidden;
-	padding: 1rem;
+	#intro{
+		overflow: hidden;
+		padding: 1rem;
+	}
+
+	#intro img{
+		display: inline-block;
+		width: 50%;
+		padding-bottom: 0;
+		padding-left: 1.6rem;
+		margin-top: -3.3rem;
+	}
+
+	.hi{
+		text-align: left;
+		padding: 0;
+		margin-left: 1rem;
+	}
+
+	.intro-txt{
+		width: 49%;
+		display: inline-block;
+	}
+
+	.intro-txt:nth-child(2){
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+	}
+
+	#intro p {
+		display: inline-block;
+	}
+
+	.wrapper{
+		max-width: 70rem;
+		display: block;
+		margin: 0 auto;
+
+	}
+
 }
 
-#intro img{
-	display: inline-block;
-	width: 50%;
-	padding: 0;
+@media only screen and (min-width: 90em){
+
+	.hi{
+		font-size: 6rem;
+	}
+
+	.intro-txt:nth-child(2){
+	font-size: 2rem;
+	line-height: 3rem;
 }
 
-.hi{
-	text-align: left;
-	padding: 0;
-	margin-left: 1rem;
-}
+	.wrapper{
+		max-width: 100rem;
 
-.intro-txt{
-	width: 49%;
-	display: inline-block;
-}
-
-.intro-txt:nth-child(2){
-	font-size: 1.3rem;
-	line-height: 1.6rem;
-}
-
-#intro p {
-	display: inline-block;
-}
-
-
+	}
 
 }
 
 /* ABOUT section */
 
 #about{
-	background-color: #F0F0F0;
+	background-color: #F0F0F0;	
+}
+
+#about{
 	overflow: hidden;
 	}
 
@@ -267,7 +290,15 @@ h3{
 	padding: .65rem;
 }
 
+#about ol{
+	list-style-type: square;
+}
+
 @media only screen and (min-width: 48em){
+
+	#about{
+		padding-bottom: 1.3rem;
+	}
 
 	.about-div{
 		width: 50%;
@@ -289,6 +320,10 @@ h3{
 
 @media only screen and (min-width: 90em){
 
+	#about{
+		overflow: hidden;
+	}
+
 	#about img{
 		float: left;
 		clear: left;
@@ -297,7 +332,12 @@ h3{
 
 	.about-txt{
 		display: block;
+		float: none;
 
+	}
+
+	#about ol{
+		margin-left: 8.5rem;
 	}
 
 }
@@ -311,6 +351,7 @@ h3{
 	background-color: lightgrey;
 	margin: 0;
 	padding-top: .65rem;
+	padding-bottom: 2.6rem;
 }
 
 
@@ -446,6 +487,13 @@ section#contact nav{
 
 @media only screen and (min-width: 48em) {
 
+	#contact{
+		padding-bottom: 2.6rem;
+	}
+
+	#contact h2{
+		margin-top: 3.9rem;
+	}
 
 	section#contact img{
 		float: none;
@@ -501,4 +549,27 @@ footer img{
 
 
 	
+@media print{
 
+
+	body{
+		width: 2in;
+		height: 3.5in;
+		margin: 0 auto;
+		vertical-align: middle;
+		border: 1px solid #000;
+	}
+
+	section{
+		display: none;
+	}
+
+	article{
+		display: none;
+	}
+
+	header{
+		display: none;
+	}
+
+}
