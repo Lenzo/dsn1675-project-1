@@ -186,7 +186,23 @@ h3{
 		padding-top: 0;
 	}
 
+	p, #about ol{
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+
+	
+
 }
+
+@media only screen and (min-width: 90em){
+
+	p, #about ol{
+		font-size: 1.4rem;
+	}
+
+}
+
 
 
 
@@ -247,7 +263,7 @@ h3{
 		display: inline-block;
 	}
 
-	.wrapper{
+	.intro-wrapper{
 		max-width: 70rem;
 		display: block;
 		margin: 0 auto;
@@ -305,46 +321,21 @@ h3{
 		float: left;
 	}
 
+	.about h3
+
 	.about p{
 		max-width: 20rem;
 	}
 
 	.about-txt{
-		max-width: 30rem;
-		float: left;
-		display: inline;
+		width: 100%;
+		max-width: 35rem;
+		margin: 0 auto;
 	}
 
 
 }
 
-@media only screen and (min-width: 90em){
-
-	#about{
-		overflow: hidden;
-	}
-
-	#about img{
-		float: left;
-		clear: left;
-		width: 20%;
-	}
-
-	.about-txt{
-		display: block;
-		float: none;
-
-	}
-
-	#about ol{
-		margin-left: 4.5rem;
-	}
-
-	.wrapper{
-		width: 66%;
-	}
-
-}
 
 
 
@@ -394,6 +385,8 @@ h3{
 
 @media only screen and (min-width: 48em){
 
+
+
 	
 		#skills ol{
 			overflow: hidden;
@@ -402,6 +395,7 @@ h3{
 			max-width: 100%;
 			max-width: 45rem;
 			margin: 0 auto;
+
 		}
 
 
@@ -410,7 +404,8 @@ h3{
 			width: calc(50% - 1.3rem);
 			margin: .65rem;
 			list-style-type: none;
-			min-height: 20rem;
+			min-height: 25rem;
+
 		}
 
 		#skills ul li{
@@ -418,7 +413,12 @@ h3{
 			float: none;
 			margin: 0;
 			padding-right: 1rem;
-			line-height: 1.4rem;
+			line-height: 2rem;
+			font-size:1.4rem;
+		}
+
+		#skills h3{
+			font-size: 2rem;
 		}
 
 }
@@ -435,9 +435,11 @@ h3{
 		#skills ol>li{
 			padding: 0 1.5rem 1.5rem 1.5rem;
 			display: inline-block;
-			min-height: 19rem;
+			min-height: 25rem;
 			width: 23.5%;
-		}		
+		}	
+
+
 }
 
 
