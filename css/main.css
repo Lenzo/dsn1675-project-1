@@ -384,7 +384,7 @@ h3{
 #skills ol>li{
 	margin: .65rem auto;
 	font-size: 1.5rem;
-	background-color: #666;
+	background-color: #A6519E;
 	color: #fff;
 	text-align: center;
 	padding-bottom: 1.3rem;
@@ -409,9 +409,7 @@ h3{
 	
 		#skills ol{
 			overflow: hidden;
-			width: 100%;
-			max-width: 100%;
-			max-width: 56rem;
+			max-width: 52rem;
 			margin: 0 auto;
 
 		}
@@ -422,7 +420,7 @@ h3{
 			width: calc(50% - 1.3rem);
 			margin: .65rem;
 			list-style-type: none;
-			min-height: 24.5rem;
+			min-height: 25rem;
 
 		}
 
